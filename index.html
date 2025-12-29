@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My College Event</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: darkblue;
+        }
+
+        .description {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        #event-section {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color: crimson;">🎉 My College Event</h1>
+
+    <button class="toggle-btn" onclick="toggleTheme()">🌗 Toggle Theme</button>
+
+    <!-- Background Image Section -->
+    <section class="hero">
+        <h2>Annual Tech & Cultural Fest</h2>
+    </section>
+
+    <div id="event-section">
+        <p class="description">
+            Our college event brings together students to celebrate innovation,
+            creativity, and talent through technical and cultural activities.
+        </p>
+
+        <h3 class="subheading">Event Highlights</h3>
+        <ul class="event-list">
+            <li>Hackathon</li>
+            <li>Cultural Night</li>
+            <li>Workshops</li>
+            <li>Prize Distribution</li>
+        </ul>
+
+        <!-- Countdown -->
+        <h3>⏳ Event Starts In:</h3>
+        <p id="countdown"></p>
+
+        <button onclick="openModal()">📜 View Rules</button>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="form-section">
+        <h3>📝 Register Now</h3>
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="email" id="email" placeholder="Enter your email">
+        <button onclick="register()">Submit</button>
+        <p id="formMessage"></p>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal()" class="close">&times;</span>
+            <h3>Event Rules</h3>
+            <p>✔ Students must carry ID cards</p>
+            <p>✔ Follow college discipline</p>
+            <p>✔ Registration is mandatory</p>
+        </div>
+    </div>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
