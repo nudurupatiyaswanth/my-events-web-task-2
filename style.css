@@ -1,0 +1,92 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f5f5f5;
+    transition: background 0.3s;
+}
+
+/* Dark mode */
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+/* Hero section */
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1523580846011-d3a5bc25702b");
+    background-size: cover;
+    padding: 60px;
+    color: white;
+    text-align: center;
+}
+
+/* Headings */
+.subheading {
+    text-align: center;
+    color: #2e7d32;
+}
+
+/* List */
+.event-list {
+    list-style-type: square;
+    color: #1a237e;
+}
+
+/* Buttons */
+button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+/* Toggle */
+.toggle-btn {
+    float: right;
+    margin: 10px;
+}
+
+/* Form */
+.form-section {
+    background: #fff3e0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    margin: 15% auto;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
